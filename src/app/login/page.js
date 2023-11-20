@@ -32,7 +32,7 @@ export default function Page() {
                 const token = response.data.token;
                 localStorage.setItem('token', `Bearer ${token}`);
 
-                router.push('/');
+                router.push('/home');
             } else {
                 console.error('Erro no login:', response.data);
             }
