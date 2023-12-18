@@ -30,12 +30,12 @@ export default function Page() {
         {tuites.map(tuite => (
           <li key={tuite.id_tuite}>
             <Tuite
-              profileimg={tuite.profileimg}
-              username={tuite.username}
+              profileimg={tuite.User.profileimg}
+              username={tuite.User.username}
               content={tuite.content}
-              firstname={tuite.firstname}
-              lastname={tuite.lastname}
-              createdA={tuite.createdAt}
+              firstname={tuite.User.firstname}
+              lastname={tuite.User.lastname}
+              createdAt={tuite.createdAt}
             />
           </li>
         ))}

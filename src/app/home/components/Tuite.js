@@ -13,7 +13,7 @@ export default function Tuite({ profileimg, username, content, firstname, lastna
             />
             <div className={styles.tuite__text}>
                 <p className={styles.tuite__header}>
-                    <strong>{firstname + lastname}</strong>
+                    <strong>{`${firstname} ${lastname}`}</strong>
                     @{username}
                     • {createdAt}
                 </p>
